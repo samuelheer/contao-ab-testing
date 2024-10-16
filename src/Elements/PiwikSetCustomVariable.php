@@ -10,6 +10,14 @@ namespace Bastibuck\ABTesting\Elements;
 
 class PiwikSetCustomVariable extends \ContentElement
 {
+  
+  /**
+	 * Template
+	 * @var string
+	 */
+	protected $strTemplate = 'ce_html';
+  
+  
   public function generate()
   {
     if (TL_MODE == 'BE')
